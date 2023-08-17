@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=Merienda&family=Montserrat&family=Roboto&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+.list-element {
+  margin: 10px;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(179, 179, 179);
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+}
+.pokemon-list {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 1250px;
+  justify-content: center;
+  align-items: center;
+}
+.pokemon-image {
+  margin: 0;
+  width: 150px;
+}
+.pokemon-txt {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.pagination-button {
+  border: none;
+  outline: none;
+  background-color: rgb(179, 179, 179);
+  color: white;
+  width: 300px;
+  height: 50px;
+  cursor: pointer;
+  margin: 5px;
+}
+.button-parent {
+  display: flex;
+  margin: auto;
+  width: 700px;
+  justify-content: center;
+}
+.input-field {
+  height: 40px;
+  width: 350px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  margin-top: 50px;
+}
+
+.search-icon {
+  position: relative;
+  top: 223px;
+  right: 115px;
+}
+.type-box {
+  border-radius: 5px;
+  background-color: rgb(109, 109, 109);
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+.grass {
+  background-color: green;
+}
+.normal {
+  background-color: antiquewhite;
+}
+.poison {
+  background-color: purple;
+}
+.fire {
+  background-color: orange;
+}
+.flying {
+  background-color: plum;
+}
+.water {
+  background-color: rgb(99, 99, 255);
+}
+.bug {
+  background-color: rgb(134, 206, 0);
+}
+.electric {
+  background-color: yellow;
+}
+.fighting {
+  background-color: red;
+}
+.psychic {
+  background-color: palevioletred;
+}
+.ground {
+  background-color: rgb(207, 199, 83);
+}
+.search-div {
+  margin: auto;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-caption {
+  font-size: 40px;
+}
