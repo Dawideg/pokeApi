@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@500&family=Merienda&family=Montserrat&family=Roboto&display=swap");
+html {
+  font-size: 20px;
+}
 * {
   font-family: "Roboto", sans-serif;
 }
 .list-element {
   margin: 10px;
-  width: 250px;
-  height: 300px;
+  width: 13rem;
+  height: 15rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,17 +21,17 @@
   display: flex;
   margin: auto;
   flex-wrap: wrap;
-  width: 1250px;
   justify-content: center;
   align-items: center;
 }
 .pokemon-image {
   margin: 0;
-  width: 150px;
+  width: 8rem;
 }
 .pokemon-txt {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 1rem;
 }
 .pagination-button {
   border: none;
@@ -69,6 +72,7 @@
   text-align: center;
   display: inline-block;
   margin: 5px;
+  font-size: 1rem;
 }
 .grass {
   background-color: green;
@@ -112,5 +116,43 @@
   justify-content: center;
 }
 .main-caption {
-  font-size: 40px;
+  font-size: 2rem;
+}
+.pop-up-div-background {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.466);
+}
+.pop-up-div {
+  background-color: rgb(109, 109, 109);
+  width: 500px;
+  height: 600px;
+  margin: auto;
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+.pop-up-div li {
+  list-style: none;
+}
+.pokemon-image-pop {
+  margin: auto;
+  width: 250px;
+  padding: none;
+  margin-top: -50px;
+  margin-bottom: -50px;
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
 }

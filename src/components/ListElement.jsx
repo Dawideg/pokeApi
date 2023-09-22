@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { nanoid } from "nanoid";
+import PopUp from "./PopUp";
 
 const ListElement = ({ el }) => {
   const [pokemonData, setPokemonData] = useState("");
@@ -8,6 +9,7 @@ const ListElement = ({ el }) => {
     `https://pokeapi.co/api/v2/pokemon/${el}`
   );
   const [desc, setDesc] = useState("");
+  const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
     let cancel;
@@ -47,7 +49,19 @@ const ListElement = ({ el }) => {
 
     // return () => cancel("a");
   }, []);
-  return <div className="list-element">{desc}</div>;
+  return (
+    <>
+      <div className="list-element" onClick={() => setIsClicked(true)}>
+        {desc}
+      </div>
+      <PopUp
+        isClicked={isClicked}
+        setIsClicked={setIsClicked}
+        el={el}
+        pokemonData={pokemonData}
+      />
+    </>
+  );
 };
 
 export default ListElement;
