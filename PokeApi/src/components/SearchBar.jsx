@@ -14,7 +14,7 @@ const SearchBar = ({ setPhrase, phrase, setLoading, searchFunction }) => {
         value={phrase}
         placeholder="Search for pokemon..."
         onChange={(e) => {
-          setPhrase(e.target.value);
+          setPhrase(e.target.value.toLowerCase());
           searchFunction();
         }}
       />
